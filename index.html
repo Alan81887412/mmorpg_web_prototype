@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>MMORPG Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>🏰 樓層攻略原型</h1>
+
+    <section>
+        <h2>玩家列表（實名唯一）</h2>
+        <ul id="playerList"></ul>
+    </section>
+
+    <section>
+        <h2>攻略團</h2>
+        <button onclick="addToTeam()">加入攻略團</button>
+        <ul id="teamList"></ul>
+    </section>
+
+    <section>
+        <h2>樓層 1</h2>
+        <p>需求人數：3</p>
+        <button onclick="attemptClear()">嘗試破關</button>
+        <p id="result"></p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
